@@ -1,0 +1,6 @@
+#!ipxe
+
+kernel https://raw.githubusercontent.com/kevindu/ipxe-nv-install/master/vmlinuz-xen
+initrd https://raw.githubusercontent.com/kevindu/ipxe-nv-install/master/initrd
+imgargs vmlinuz-xen root=/dev/ram rootfstype=ramfs selinux=0 init=/bin/sh launch_config=1 img_url=http://18.195.119.32/Sunlight.Platform.iso.gz console=ttyS0,115200
+boot
